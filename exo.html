@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test"></p>
+</body>
+<script>
+        var a = 5;
+        var b = 7;
+            if ( a < b ) {
+            console.log('b est plus grand que a')
+            }
+
+        var a = 7;
+        var b = 4;
+            if ( a > b ) {
+            console.log('b est plus petit que a')
+            }
+        var a = 2;
+        var b = 3;
+        var temp = a
+        var a = b
+        var b = temp
+        console.log(a, b)
+
+        var a = 2;
+        var b = 3;
+        var c = a + b;
+        console.log(c)
+
+        function randomNumber(min, max) {  
+    return Math.floor(Math.random() * (max - min) + min); }
+    console.log( randomNumber(1, 100) );  
+
+    function randomNumber(min, max) {  
+    return Math.floor(Math.random() * (max - min) + min); }
+    console.log( randomNumber(5, 10) ); 
+
+
+    function addition(a, b) {
+        return a + b}
+    console.log(addition(a, b))
+
+
+    var a = randomNumber(1, 100)
+    if (a < 50) {
+        console.log('Je suis nul.')
+    }
+    else {
+        console.log('Je suis bon')
+    }
+
+    var x = randomNumber(0, 5)
+    if (x == 1){
+        console.log('AAAA')
+    }
+    else if (x == 2){
+        console.log('BBBB')
+    }
+    else if (x == 3){
+        console.log('CCCC')
+    }
+    else if (x == 4){
+        console.log('DDDD')
+    }
+    else {
+        console.log('Je suis une perruche')
+    }
+
+    var x = randomNumber(0, 5)
+    switch (x) {
+        case 1 :
+        console.log('AAAA')
+        break;
+        case 2 :
+        console.log('BBBB')
+        break;
+        case 3 :
+        console.log('CCCC')
+        break;
+        case 4 :
+        console.log('DDDD')
+        break;
+        default:
+        console.log('Je suis une perruche')
+        break;
+    }
+
+    for(var i=0;i<10;i++){
+        console.log ( 'Number'+(i+1)+' : '+randomNumber(0,1000));
+    }
+
+    var tableau = [];
+
+    for (var i=0;i<10;i++){
+        tableau[i] = randomNumber(0,1000)
+    }
+    var i = 1;
+
+    var total = 0;
+    for(var i=0; i<tableau.length; i++){
+        total += tableau[i];
+    }
+    console.log('Total '+total);
+</script> 
+</html>
